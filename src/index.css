@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer screens {
+  @media (max-width: 768px) {
+    .liitems {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
 
 body {
   margin: 0;

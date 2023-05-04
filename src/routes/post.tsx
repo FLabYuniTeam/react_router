@@ -1,3 +1,16 @@
+export type Posts = {
+  id: number;
+  imageUrl: string;
+  title: string;
+  description: string;
+  date: string;
+};
+
+export type PostsDetail = {
+  id: number;
+  imageUrl: string;
+};
+
 export default function Post() {
   return (
     <>
