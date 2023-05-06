@@ -1,4 +1,3 @@
-import React from "react";
 import { Posts } from "../routes/post";
 
 export default function LiItems(posts: Posts) {

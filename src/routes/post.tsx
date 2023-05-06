@@ -30,13 +30,16 @@ export default function Post() {
     <div className="flex">
       <div className="flex-col p-8 mt-10 m-auto w-3/4 md:w-4/5 max-w-1024px">
         <PostsDetailPages
-          id={filteredPost.id}
-          imageUrl={filteredPost.imageUrl}
-          title={filteredPost.title}
-          profileImage={filteredPost.profileImage}
-          writer={filteredPost.writer}
-          date={filteredPost.date}
-          contents={filteredPost.contents}
+          key={filteredPost.id}
+          postDetail={{
+            id: filteredPost.id,
+            imageUrl: filteredPost.imageUrl,
+            title: filteredPost.title,
+            profileImage: filteredPost.profileImage,
+            writer: filteredPost.writer,
+            date: filteredPost.date,
+            contents: filteredPost.contents
+          }}
         />
       </div>
     </div>
